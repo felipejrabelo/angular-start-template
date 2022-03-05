@@ -1,0 +1,14 @@
+
+<!--Adicione esse HTML para Obter o DatePicker no seu Componente-->
+<form class="row row-cols-sm-auto">
+    <div class="col-12">
+      <div class="input-group">
+        <input class="form-control" placeholder="dd/mm/yyyy"
+               name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+        <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+      </div>
+    </div>
+  </form>
+  
+  <hr/>
+  <pre>Model: {{ model | json }}</pre>
